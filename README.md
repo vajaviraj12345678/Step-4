@@ -7,4 +7,4 @@ Checking complted task in list.
 Also delete all task from list.
 
 Functional Link:
-https://virajvaja3103.000webhostapp.com/index.html
+https://vigorous-pike-b68d27.netlify.app/
