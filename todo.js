@@ -1,4 +1,6 @@
 const addBtn = document.getElementById('submit');
+const deleteBtn = document.getElementById('submit1');
+
 let inputArray = [];
 let count = 0;
 let index;
@@ -13,6 +15,7 @@ function addVal(event) {
         document.getElementById('text-box').value = "";
         display();
     }
+    deleteBtn.style.display="block";
 }
 
 function display() {
@@ -65,7 +68,7 @@ function delVal(e) {
             inputArray.splice(i, 1);
             count--;
         }
-    }
+        }
     e.parentNode.remove();
     return inputArray;
 }
@@ -131,4 +134,11 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
+function remove()
+{
+    location.reload();
+    deleteBtn.style.display="none";
+}
+
 addBtn.addEventListener('click', addVal);
+deleteBtn.addEventListener('click', remove);
