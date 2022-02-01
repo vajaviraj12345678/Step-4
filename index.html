@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./todo.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="./todo.js" defer></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -15,16 +16,19 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <h1 class="heading">TODO LIST</h1>
         <div class="input">
-            <input type="text" class="text-box" id="text-box" placeholder="Enter the task" required>
+            <textarea class="text-box" id="text-box" rows="1" cols="20" placeholder="Enter the task" required></textarea>
             <input type="submit" value="Add Task" class="submit" id="submit" type="submit">
-        </div>
-        <div id= "data1" class= "data1">
+            </div>
+           <div id= "data1" class= "data1">
 
            </div>
-    </div>
+           <div>
+            <input type="submit" value="Clear" class="submit1" id="submit1" type="submit">
+           </div>
+        </div>
 </body>
 
 </html>
