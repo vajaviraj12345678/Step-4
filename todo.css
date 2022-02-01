@@ -1,60 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Harmattan&display=swap');
-
-
-body {
+body
+{
     background-color: black;
 }
-.main
-{
-    justify-content: center;
-}
 .heading {
-    /*margin-bottom: 10%;*/
+    margin-top: 10%;
     font-size: 30px;
-    color: teal;
+    color: white;
     text-align: center;
     font-size: 30px;
     font-weight: normal;
+    text-shadow: 3px 3px 6px rgb(65, 63, 63);
 }
 
 .input {
-    /*margin-bottom: 20%;*/
-    /*display: flex;*/
+    margin-top: 4%;
+    display: flex;
     justify-content: center;
-    margin-left: 450px;
 }
 
 .text-box {
-    height: 40px;
-    width: 50vh;
+    height: 38px;
+    width: 40vh;
     padding-left: 1%;
     background-color: teal;
     border: none;
+    box-shadow: 3px 3px 6px rgb(65, 63, 63);
     outline: none;
     color: white;
     font-size: 19px;
 }
-
+.site-search
+{
+    height: 38px;
+    width: 40vh;
+    padding-left: 1%;
+    background-color: teal;
+    border: none;
+    box-shadow: 3px 3px 6px rgb(65, 63, 63);
+    outline: none;
+    color: white;
+    font-size: 19px;
+    margin-top: 1%;
+    margin-left: 500px;
+}
 ::placeholder {
     color: black;
-    font-family: 'Harmattan', sans-serif;
-    font-size: 19px;
 }
 
-.submit {
+.submit
+{
     width: 70px;
     height: 44px;
     margin-left: 1%;
     background: teal;
-    color: black;
-    cursor: pointer;
-    transition: 0.2s;
 }
 
-.submit:hover {
+.submit1 {
+    width: 70px;
+    height: 44px;
+    margin-left: 550px;
+    background: teal;
+    color: black;
+    cursor: pointer;
+    display: none;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+.submit1:hover {
     background: teal;
 }
+
 
 .data1
 {
@@ -119,6 +134,7 @@ body {
     font-size: 22px;
     cursor: pointer;
 }
+
 
 .far fa-pen,
 .far fa-trash {
